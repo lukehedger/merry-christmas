@@ -1,3 +1,3 @@
-# Merry Christams
+# Merry Christmas
 
 :christmas_tree:
