@@ -1,0 +1,30 @@
+nav
+    align(both)
+    span(1/1)
+
+    li
+        col(1/4)
+        height: 200px
+        margin-bottom: 20px
+
+        +below(768px)
+            stack()
+
+        a
+            height: 100%
+            border-radius: 4px
+            display: block
+            background: white
+            color: #446E2F
+            text-align: center
+            line-height: 200px
+            text-transform: uppercase
+            font-weight: bold
+            font-size: 30px
+            font-family: "Gill Sans"
+            cursor: pointer
+            transition: 0.2s
+
+            &:hover
+                background: #446E2F
+                color: white

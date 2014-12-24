@@ -15,10 +15,11 @@ class App
 			el: ".content"
 			template: require "../template/content.html"
 			data:
-				views: ["start", "test"]
+				views: ["alice", "mum", "dad", "phil"]
 				current: "start"
 
-		@content.on "switchView", (e) => @content.set "current", e.context
+		@content.on "switchView", (e) =>
+			@content.set "current", e.node.getAttribute("data-view")
 
 
 new App()

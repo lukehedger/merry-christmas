@@ -97,13 +97,32 @@ a img {
 html,
 body {
   height: 100%;
+  background-color: #001848;
 }
-body {
-  padding: 0 5%;
-}
-.view {
+header {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
   width: 100%;
-  height: 100vh;
+  margin-left: 0%;
+  margin-right: 0%;
+  z-index: 100;
+}
+header:before,
+header:after {
+  content: '';
+  display: table;
+}
+header:after {
+  clear: both;
+}
+header h1 {
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+  font-size: 60px;
+  font-family: "brush script mt";
 }
 html,
 body,
@@ -115,7 +134,6 @@ textarea {
 }
 body {
   font: normal 1em/1.4 Helvetica, Arial, sans-serif;
-  text-shadow: #fff 0 1px 0;
 }
 h1 {
   text-align: center;
@@ -132,4 +150,189 @@ a {
   text-shadow: none;
   cursor: pointer;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+nav {
+  position: absolute;
+  transform-style: preserve-3d;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+nav:before,
+nav:after {
+  content: '';
+  display: table;
+}
+nav:after {
+  clear: both;
+}
+nav li {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 22.75%;
+  margin-left: 0%;
+  margin-right: 3%;
+  height: 200px;
+  margin-bottom: 20px;
+}
+nav li:before,
+nav li:after {
+  content: '';
+  display: table;
+}
+nav li:after {
+  clear: both;
+}
+nav li:last-child {
+  margin-right: 0%;
+}
+@media only screen and (max-width: 768px) {
+  nav li {
+    display: block;
+    clear: both;
+    float: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  nav li:first-child {
+    margin-left: auto;
+  }
+  nav li:last-child {
+    margin-right: auto;
+  }
+}
+nav li a {
+  height: 100%;
+  border-radius: 4px;
+  display: block;
+  background: #fff;
+  color: #446e2f;
+  text-align: center;
+  line-height: 200px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: "Gill Sans";
+  cursor: pointer;
+  transition: 0.2s;
+}
+nav li a:hover {
+  background: #446e2f;
+  color: #fff;
+}
+.present,
+.view {
+  width: 80%;
+  height: 80vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+.present {
+  background-color: #fff;
+  padding: 3%;
+  overflow: scroll;
+  text-align: center;
+  font-family: "Gill Sans";
+}
+.present h2 {
+  color: #446e2f;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+.present h3 {
+  font-size: 18px;
+}
+.present img {
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto;
+  display: block;
+  border: 5px solid #446e2f;
+}
+.present a {
+  width: 100%;
+  max-width: 300px;
+  margin: 40px auto;
+  padding: 10px;
+  border: 1px solid #446e2f;
+  border-radius: 3px;
+  display: block;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #446e2f;
+}
+.present a:hover {
+  background-color: #fff;
+  color: #446e2f;
+}
+#snow {
+  background: none;
+  background-image: url("http://www.wearewebstars.dk/codepen/img/s1.png"), url("http://www.wearewebstars.dk/codepen/img/s2.png"), url("http://www.wearewebstars.dk/codepen/img/s3.png");
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  -webkit-animation: sno 10s linear infinite;
+}
+@-moz-keyframes sno {
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px;
+  }
+  50% {
+    background-position: 500px 500px, 100px 200px, -100px 150px;
+  }
+  100% {
+    background-position: 500px 1000px, 200px 400px, -100px 300px;
+  }
+}
+@-webkit-keyframes sno {
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px;
+  }
+  50% {
+    background-position: 500px 500px, 100px 200px, -100px 150px;
+  }
+  100% {
+    background-position: 500px 1000px, 200px 400px, -100px 300px;
+  }
+}
+@-o-keyframes sno {
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px;
+  }
+  50% {
+    background-position: 500px 500px, 100px 200px, -100px 150px;
+  }
+  100% {
+    background-position: 500px 1000px, 200px 400px, -100px 300px;
+  }
+}
+@keyframes sno {
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px;
+  }
+  50% {
+    background-position: 500px 500px, 100px 200px, -100px 150px;
+  }
+  100% {
+    background-position: 500px 1000px, 200px 400px, -100px 300px;
+  }
 }

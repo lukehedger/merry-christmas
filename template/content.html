@@ -1,17 +1,57 @@
+<div id="snow"></div>
+
+<header role="banner">
+    <h1 on-click="switchView" data-view="start">Merry Christmas!</h1>
+</header>
+
 {{#current == "start"}}
-<div class="view start" intro="fly" outro="fly">
+<div class="view start" intro="fly">
     <nav role="navigation">
         <ul>
             {{#views}}
-            <li on-click="switchView" data-view="{{this}}">{{this}}</li>
+            <li>
+                <a on-click="switchView" data-view="{{this}}">{{this}}</a>
+            </li>
             {{/views}}
         </ul>
     </nav>
 </div>
 {{/}}
 
-{{#current == "test"}}
-<div class="view test" intro="fly" outro="fly">
-    test
+{{#current == "alice"}}
+<div class="present" intro="fly">
+    <h2>Gothenburg</h2>
+    <h3>The trip of a lifetime to Sweden!</h3>
+    <img src="http://paradiseintheworld.com/wp-content/uploads/2012/03/gothenburg-winter.jpg" />
+    <a href="http://www.stylist.co.uk/travel/destination-guide-gothenburg" target="_blank">Stylist Guide</a>
+</div>
+{{/}}
+
+{{#current == "mum"}}
+<div class="present" intro="fly">
+    <h2>Sargent: Portraits of Artists and Friends</h2>
+    <h3>John Singer Sargent exhibition at the National Portrait Gallery</h3>
+    <img src="img/npg.png" />
+    <a href="http://www.npg.org.uk/whatson/sargent/home.php" target="_blank">Find out more!</a>
+</div>
+{{/}}
+
+{{#current == "dad"}}
+<div class="present" intro="fly">
+    <h2>Twelve Cantonas...</h2>
+    <h3>MUFC vs West Ham - just in Haringey, not Old Trafford!</h3>
+    <img src="http://peteboyle.co.uk/wp-content/uploads/2013/01/OT_Christmas.jpg" />
+    <p>90 minutes of beautiful football followed by the best Turkish food in London at Gökyüzü</p>
+    <a href="http://gokyuzurestaurant.co.uk/" target="_blank">Find out more!</a>
+</div>
+{{/}}
+
+{{#current == "phil"}}
+<div class="present" intro="fly">
+    <h2>Bermondsey Beer Mile</h2>
+    <h3>1 Mile. 7 Breweries. Shed-loads of Beer.</h3>
+    <img src="http://4.bp.blogspot.com/-HCzPiytabro/U6Huku-MjlI/AAAAAAAABGY/MFSumP0IXgQ/s1600/afterlight+%252817%2529.jpeg" />
+    <p>Fourpure &rarr; Partizan &rarr; Kernel &rarr; Brew by Numbers &rarr; Bullfinch &rarr; Anspach &amp; Hobday &rarr; Southwark Brewing Co</p>
+    <a href="http://triptease.com/bermondsey-beer-mile/hotels/30308" target="_blank">Find out more!</a>
 </div>
 {{/}}
