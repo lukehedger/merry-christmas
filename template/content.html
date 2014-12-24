@@ -1,0 +1,17 @@
+{{#current == "start"}}
+<div class="view start" intro="fly" outro="fly">
+    <nav role="navigation">
+        <ul>
+            {{#views}}
+            <li on-click="switchView" data-view="{{this}}">{{this}}</li>
+            {{/views}}
+        </ul>
+    </nav>
+</div>
+{{/}}
+
+{{#current == "test"}}
+<div class="view test" intro="fly" outro="fly">
+    test
+</div>
+{{/}}
